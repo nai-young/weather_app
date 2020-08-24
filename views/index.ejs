@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles.css">
   <title>Document</title>
 </head>
-<body class="container">
+<body class="div-container">
   <form action="" method="POST" class="input-group col-lg-3">
     <input required type="text" name="city" class="form-control" placeholder="City name...">
     <span class="input-group-btn">
@@ -38,10 +39,12 @@
         <td><%= data.main.humidity %>ºC</td>
       </tr>
    <% } %>
+   <tfoo>
+     <% if (error !== null) { %>
+      <p><%= error %></p>
+      <% } %>
+  </tfoo>
   </table>
-  <% if (error !== null) { %>
-    <p><%= error %></p>
-  <% } %>
   </div>
 </body>
 </html>

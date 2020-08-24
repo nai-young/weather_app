@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: true }))
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => {
-  res.render('index', { data: null, error: 'Enter a name'})
+  res.render('index', { data: null, error: null})
 })
 app.post('/', (req, res) => {
   let city = req.body.city
